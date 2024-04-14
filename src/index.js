@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App';
-import HeaderAside from './components/HeaderAside';
+import Check from './pages/Check';
 import NotFound from './pages/NotFound';
 import reportWebVitals from './reportWebVitals';
 
@@ -12,10 +12,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <NotFound />,
     children: [
-      { index: true, element: <HeaderAside /> },
-      { path: 'HeaderAside', element: <HeaderAside /> },
-      // { path: 'Home/:keyword', element: <Home /> },
-      // { path: 'Home/main/:HomeId', element: <HomeDetail /> },
+      { index: true, element: <Check /> },
+      { path: 'check', element: <Check /> },
+      // { path: 'videos/:keyword', element: <Videos /> },
+      // { path: 'videos/watch/:videoId', element: <VideoDetail /> },
     ]
   }
 ]);
