@@ -12,8 +12,12 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <NotFound />,
     children: [
-      { index: true, element: <Check /> },
-      { path: 'check', element: <Check /> },
+      { index: true, element: <Videos /> },
+      { path: 'check', element: <Videos /> },
+      { path: 'check', element: <Videos /> },
+      { path: 'check', element: <Videos /> },
+      { path: 'check', element: <Videos /> },      
+
       // { path: 'videos/:keyword', element: <Videos /> },
       // { path: 'videos/watch/:videoId', element: <VideoDetail /> },
     ]
