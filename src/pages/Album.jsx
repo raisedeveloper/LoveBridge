@@ -6,8 +6,7 @@ export default function album({x}) {
     console.log('Selected File:', file);
     // 여기서 선택한 파일을 저장하고 앨범에 표시하는 로직을 추가할 수 있습니다.
   };
-
-  return (
+  return (  
     <div>
       <h1>앨범</h1>
       <input type="file" onChange={handleFileChange} />
